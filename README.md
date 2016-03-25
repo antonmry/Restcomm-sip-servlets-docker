@@ -38,3 +38,9 @@ RUN $JBOSS_HOME/bin/add-user.sh admin Admin#70365 --silent
 ```
 
 and open your browser [http://localhost:9990/console/](http://localhost:9990/console/)
+
+## TODO
+
+- [ ] [#1](https://github.com/antonmry/restcomm-sip-servlets-jboss-docker/issues/1) Add logging
+- [ ] [#2](https://github.com/antonmry/restcomm-sip-servlets-jboss-docker/issues/2) Add Application deployment
+- [ ] Add example

@@ -13,17 +13,14 @@ RUN wget -qc https://github.com/RestComm/sip-servlets/releases/download/v3.1.633
 
 ENV JBOSS_HOME=/home/jboss/mss-3.1.633-jboss-as-7.2.0.Final
 
-EXPOSE 8080/tcp
-EXPOSE 9990/tcp
 EXPOSE 5080/udp
 EXPOSE 5080/tcp
-
-# ONLY FOR DEBUG
-EXPOSE 8787/tcp
+EXPOSE 8080/tcp
 
 WORKDIR $JBOSS_HOME/bin
 
-CMD ["./standalone.sh", "-c", "standalone-sip.xml", "-b", "0.0.0.0"]
+CMD ["./standalone.sh", "-c", "standalone-sip.xml", "-b", "0.0.0.0", "-bmanagement", "0.0.0.0"]
 
 
-# docker run -it -p 8080:8080  -p 9990:9990 -p 5080:5080 antonmry/mss:3.1.633
+# Old DOC: http://docs.telestax.com/sip-servlets-homepage/
+

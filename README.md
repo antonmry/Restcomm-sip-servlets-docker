@@ -6,7 +6,7 @@ Docker container for [Restcomm SIP Servlet JBoss Server](https://github.com/Rest
 More info can found in the Telestax site: http://docs.telestax.com/sip-servlets-homepage/
 
 ```
-docker pull antonmry/restcomm-mss-jboss:3.1.633
+docker pull antonmry/restcomm-sip-servlets-jboss-docker:3.1.633
 ```
 
 ## Usage
@@ -14,7 +14,7 @@ docker pull antonmry/restcomm-mss-jboss:3.1.633
 Execute the following command:
 
 ```
-docker run -it -p 8080:8080 -p 5080:5080 antonmry/restcomm-mss-jboss:3.1.633
+docker run -it -p 8080:8080 -p 5080:5080 antonmry/restcomm-sip-servlets-jboss-docker:3.1.633
 ```
 
 Open with your browser [http://localhost:8080/sip-servlets-management/](http://localhost:8080/sip-servlets-management/)
@@ -22,7 +22,7 @@ Open with your browser [http://localhost:8080/sip-servlets-management/](http://l
 ## Build yourself
 
 ```
-docker build -t antonmry/restcomm-mss-jboss:3.1.633 .
+docker build -t antonmry/restcomm-sip-servlets-jboss-docker:3.1.633 .
 ```
 
 ## Note
